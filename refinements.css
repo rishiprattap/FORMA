@@ -23,3 +23,9 @@
   .studio-sequence{height:100vh}
   .art{will-change:auto}
 }
+
+/* Alternating quadratic curves form a continuous parabolic wave. */
+.logo .logo-parabola{overflow:hidden;aspect-ratio:1;stroke-width:2.5;fill:none}
+.parabola-wave{animation:parabola-flow 2.8s linear infinite}
+@keyframes parabola-flow{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+@media(prefers-reduced-motion:reduce){.parabola-wave{animation:none}}
